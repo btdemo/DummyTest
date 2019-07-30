@@ -4,12 +4,12 @@ node {
      git credentialsId: 'githubID', url: 'https://github.com/btdemo/DummyTest.git' 
     }
    stage('Build') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+    withMaven(jdk: 'jdk-1.8', maven: 'maven-3.6') {
      sh 'mvn clean compile'
       }
     }
    stage('Unit Test run') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+    withMaven(jdk: 'jdk-1.8', maven: 'maven-3.6') {
      sh 'mvn test'
       } 
     }
