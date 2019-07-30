@@ -13,10 +13,7 @@ node {
      sh 'mvn test'
       } 
     }
-   
- 
-   
-   stage('Deploy to Dev') {
+    stage('Deploy to Dev') {
      
     }
    stage('Automation Testing') {
